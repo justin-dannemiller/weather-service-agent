@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "weather-service-agent"
+version = "0.1.0"
+description = "Weather service agent"
+readme = "README.md"
+requires-python = ">=3.13"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["weather_service_agent*"]
