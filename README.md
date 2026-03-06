@@ -13,10 +13,14 @@ Brief overview of the agent's purpose and main capabilities.
 
 ## Setup
 
-1. Clone the repository
-2. Install dependencies
-3. Configure environment (if needed)
-4. Run the agent
+1. Clone the repository and `cd` into the project directory.
+2. (Optional) Create and activate a virtual environment, e.g. `python -m venv .venv` then `.venv\Scripts\activate` (Windows) or `source .venv/bin/activate` (Unix).
+3. Install the package in editable mode so changes to the code take effect without reinstalling:
+   ```bash
+   pip install -e .
+   ```
+4. Configure environment (if needed).
+5. Run the agent.
 
 ## Usage
 
