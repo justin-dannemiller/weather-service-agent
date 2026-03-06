@@ -1,14 +1,14 @@
 ## Tools
 1) weather_temperature
-    - Gets the temperature in Fahrenheit for a given city\n
+    - Gets the temperature in Celsius for a given city\n
     - Args:
-         - city (str)
+         - city (str): Name of city
     - Returns:
-        - temperature (float)
+        - temperature (float): Temperature of city in Celsius
 2) weather_conditions
     - Gets the weather conditions for a given city
     - Args: 
-        - city (str)
+        - city (str): Name of city
     - Returns:
         - conditions(list[str]): List of descriptive weather conditions (e.g., "rainy", "cloudy", "sunny")
         - wind_speed (float):  Speed of wind in kph
