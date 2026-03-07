@@ -167,11 +167,16 @@ version = "0.1.0"
 source = { editable = "." }
 dependencies = [
     { name = "pydantic" },
+]
+
+[package.optional-dependencies]
+dev = [
     { name = "pytest" },
 ]
 
 [package.metadata]
 requires-dist = [
     { name = "pydantic", specifier = ">=2.12.5" },
-    { name = "pytest", specifier = ">=9.0.2" },
+    { name = "pytest", marker = "extra == 'dev'", specifier = ">=9.0.2" },
 ]
+provides-extras = ["dev"]
