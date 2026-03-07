@@ -10,7 +10,7 @@
     - Args: 
         - city (str): Name of city
     - Returns:
-        - conditions(list[str]): List of descriptive weather conditions (e.g., "rainy", "cloudy", "sunny")
+        - conditions(list[WinterCondition]): List of weather conditions impacting city (e.g., ["rainy", "cloudy"])
         - wind_speed (float):  Speed of wind in kph
 3) weather_advice
     - Gives advice on what to wear and bring given the weather conditions
