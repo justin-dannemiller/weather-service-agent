@@ -16,4 +16,4 @@ class WeatherConditionsOutput(BaseModel):
         ...,
         description="List of weather conditions impacting the city (e.g., ['rainy', 'cloudy'])"
     )
-    wind_speed: float = Field(..., description="Speed of wind in city in kph")
+    wind_speed: float = Field(ge=0.0, description="Speed of wind in city in kph")
