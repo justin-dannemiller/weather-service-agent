@@ -29,7 +29,8 @@ class WeatherAdviceOutput(BaseModel):
         ..., 
         description="The level of clothing recommended (e.g., 'light', 'layered', or 'winter')"
     )
-    recommened_items: list[RecommendedItem] = Field(
+    recommended_items: list[RecommendedItem] = Field(
         default_factory=list,
         description="List of recommended items to bring (e.g., ['boots', 'scarf', 'gloves'])"
     )
+    high_wind_warning: bool = Field(False, description="Whether the wind speeds are dangerously high.")
