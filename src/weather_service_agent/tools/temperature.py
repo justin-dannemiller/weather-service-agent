@@ -18,5 +18,5 @@ def temperature(city: str) -> TemperatureOutput:
             message=f"No weather data available for city '{city}'. Temperature could not be retrieved."      
         )
 
-    weather_data = WEATHER_DATA[city_name]
-    return TemperatureOutput(temperature=weather_data.temperature)
+    record = WEATHER_DATA[city_name]
+    return TemperatureOutput(temperature=record.temperature)
