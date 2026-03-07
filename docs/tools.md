@@ -16,5 +16,8 @@
     - Gives advice on what to wear and bring given the weather conditions
     - Args:
         - temperature (float): Temperature in Celsius
-        - conditions (list[str]): List of weather conditions impacting the city (e.g., ['rainy', 'cloudy'])
+        - conditions (list[WeatherCondition]): List of weather conditions impacting the city (e.g., ['rainy', 'cloudy'])
         - wind_speed (float): Speed of wind in in kph
+    - Returns:
+        - clothing_level (ClothingLevel): Level of clothing recommended (e.g., 'light', 'layered', or 'winter')
+        - recommended_items (list[RecommendedItem]): List of recommended items to bring (e.g., ['umbrella', 'rain_jacket'])
