@@ -18,7 +18,7 @@ def weather_conditions(city: str) -> WeatherConditionsOutput:
     if city_name not in WEATHER_DATA:
         raise ToolExecutionError(
             code="city_not_found",
-            message=f"No weather data available for city '{city}'. "
+            message=f"No weather data available for city '{city}'. Weather conditions could not be retrieved."
         )
     record = WEATHER_DATA[city_name]
     return WeatherConditionsOutput(
